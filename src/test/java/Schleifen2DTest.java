@@ -23,4 +23,23 @@ class Schleifen2DTest {
         String expected = "# #\n # \n# #";
         assertEquals(expected, generator.generateChessboard(3));
     }
+
+    @Test
+    void testHollowSquare() {
+        // Für Größe 4: Rand voll, Mitte leer
+        String expected = "****\n*  *\n*  *\n****";
+        assertEquals(expected, generator.generateHollowSquare(4));
+    }
+
+    @Test
+    void testInvertedTriangle() {
+        String expected = "***\n**\n*";
+        assertEquals(expected, generator.generateInvertedTriangle(3));
+    }
+
+    @Test
+    void testMultiplicationTable() {
+        String expected = "1 2 3\n2 4 6\n3 6 9";
+        assertEquals(expected, generator.generateMultiplicationTable(3));
+    }
 }
