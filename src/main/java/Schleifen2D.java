@@ -40,7 +40,7 @@ public class Schleifen2D {
      * Erzeugt ein Schachbrettmuster.
      * n = 3:
      * # #
-     * #
+     *  #
      * # #
      */
     public String generateChessboard(int size) {
@@ -62,8 +62,8 @@ public class Schleifen2D {
      * Erzeugt ein hohles Quadrat. Nur der Rand besteht aus Sternen.
      * n = 4:
      * ****
-     * * *
-     * * *
+     * *  *
+     * *  *
      * ****
      */
     public String generateHollowSquare(int size) {
